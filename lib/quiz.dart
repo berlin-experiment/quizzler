@@ -5,24 +5,32 @@ class Quiz {
 
   List<Question> _questionList = [
     Question(
-        q: 'There are 4 types of Forest: boreal, temperate, subtropical and tropical.',
-        a: true),
-    Question(q: 'Forests are home to less than 80% of Biodiversity.', a: false),
+        questionText:
+            'There are 4 types of Forest: boreal, temperate, subtropical and tropical.',
+        questionAnswer: true),
     Question(
-        q: 'Every year, an estimate 18.7 million acres of forest are lost.',
-        a: true),
+        questionText: 'Forests are home to less than 80% of Biodiversity.',
+        questionAnswer: false),
     Question(
-        q: 'More than 50% of all the forest area on our planet is in just five countries',
-        a: true),
+        questionText:
+            'Every year, an estimate 18.7 million acres of forest are lost.',
+        questionAnswer: true),
     Question(
-        q: 'Boreal forests are only found in the geographical subarctic zone.',
-        a: false),
+        questionText:
+            'More than 50% of all the forest area on our planet is in just five countries',
+        questionAnswer: true),
     Question(
-        q: 'Temperate forests can be found outside the temperate geographical zone.',
-        a: false),
+        questionText:
+            'Boreal forests are only found in the geographical subarctic zone.',
+        questionAnswer: false),
     Question(
-        q: 'Subtropical forests are found on every continent, except Antarctica.',
-        a: false)
+        questionText:
+            'Temperate forests can be found outside the temperate geographical zone.',
+        questionAnswer: false),
+    Question(
+        questionText:
+            'Subtropical forests are found on every continent, except Antarctica.',
+        questionAnswer: false)
   ];
 
   void nextQuestion() {
